@@ -4,15 +4,12 @@ import styled from "styled-components";
 
 export const WindowBtn = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-gap: 25px;
-  padding: 25px;
+  grid-template-columns: 1fr;
   background: white;
-  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
   will-change: width, height;
-  z-index: 10;
+  z-index: 30;
+
 
 `
 
@@ -21,7 +18,9 @@ export const WindowMain = styled.div`
   width: 100%;
   height: 100%;
   background: white;
-  border-radius: 5px;
-  will-change: transform, opacity;
+
+  video,source{
+    width: 100%,
+  }
 
 `

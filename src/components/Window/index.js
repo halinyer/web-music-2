@@ -70,5 +70,4 @@ const Window = () => {
     </WindowAcion>
   )
 }
-
 export default Window
