@@ -8,16 +8,15 @@ import {
   useSpringRef,
 } from 'react-spring'
 
-import { WindowBtn,  WindowMain } from './WindowElement';
+import { VideioWindow, WindowBtn,  WindowMain } from './WindowElement';
 
-import data from './data.js'
-const Window = () => {
+const Window = ({data}) => {
 
     const WindowAcion = animated(WindowBtn)
     const WindowContent = animated(WindowMain)
 
-    const WidthWindow = window.screen.width /2
-    const HeiWindow = window.screen.height /2
+    const WidthWindow = window.screen.width / 3
+    const HeiWindow = window.screen.height / 3
 
 
 
@@ -27,11 +26,13 @@ const Window = () => {
     const { size, ...rest } = useSpring({
       ref: springApi,
       config: config.stiff,
-      from: { size: '20%', background: 'transparent', x:0, y:0},
+      from: { size: '20%', background: 'transparent', x:0, y:0, padding: "25px"},
       to: {
-        size: open ? '50%' : '20%',
+        size: open ? '60%' : '20%',
         background: open ? 'white' : 'transparent',
         position: open ? "absolute" : "initial",
+        padding: open ? "0px": "25px",
+        paddingTop: "20px",
         top: open ? 1 : 0,
         left: open ? 1 : 0,
         right: open ? 1: 0,
@@ -63,8 +64,17 @@ const Window = () => {
       onClick={() => set(open => !open)}>
       {transition((style, item) => (
         <WindowContent
-          style={{ ...style, background: item.css }}
-        />
+          style={{ ...style}}
+        >
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/E5y7T9c0P2o" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen></iframe>
+        </WindowContent>
       ))}
 
     </WindowAcion>

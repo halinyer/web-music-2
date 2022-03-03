@@ -7,6 +7,7 @@ export default [
       size:'cover',
       position:'center center',
       // height: 200,
+      
     },
 
   ]
