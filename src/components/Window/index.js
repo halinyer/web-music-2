@@ -28,7 +28,7 @@ const Window = ({data}) => {
       config: config.stiff,
       from: { size: '20%', background: 'transparent', x:0, y:0, padding: "25px"},
       to: {
-        size: open ? '60%' : '20%',
+        size: open ? '65%' : '20%',
         background: open ? 'white' : 'transparent',
         position: open ? "absolute" : "initial",
         padding: open ? "0px": "25px",
@@ -46,7 +46,6 @@ const Window = ({data}) => {
     const transApi = useSpringRef()
     const transition = useTransition(open ? data : [], {
       ref: transApi,
-      trail: 400 / data.length,
       from: { opacity: 0, scale: 0 },
       enter: { opacity: 1, scale: 1 },
       leave: { opacity: 0, scale: 0 },
@@ -69,9 +68,9 @@ const Window = ({data}) => {
           <iframe 
             width="100%" 
             height="100%" 
-            src="https://www.youtube.com/embed/E5y7T9c0P2o" 
+            src="https://www.youtube.com/embed/YUpn1JFB2no" 
             title="YouTube video player" 
-            frameBorder="0" 
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen></iframe>
         </WindowContent>
