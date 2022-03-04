@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { HeaderContent, HeaderMain, HeaderVideo, Videos } from './HeaderElement'
+import { HeaderContent, HeaderMain, HeaderVideo } from './HeaderElement'
 import Navbar from '../Navbar'
   
 const Header = ({children}) => {
@@ -8,9 +8,7 @@ const Header = ({children}) => {
     <HeaderMain>
          <Navbar/>
         <HeaderVideo>
-           {/* <video muted autoPlay loop>
-               <source src={Back}/>
-           </video> */}
+           
         </HeaderVideo>
         <HeaderContent>
             {children}
