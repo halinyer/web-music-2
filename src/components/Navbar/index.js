@@ -53,11 +53,11 @@ const Navbar = () => {
               </NavSocialMedia>
 
               <NavHora>
-                 <Moment locale='es'  className='time' format="dddd MMM D" />
+                 <Moment style={{fontSize:"14px"}} locale='es'  className='time '  format="dddd MMM D" />
               </NavHora>
 
               <NavHora>
-                 <Moment className='time' format="hh:mm a"  interval={1000} />
+                 <Moment style={{fontSize:"14px"}}  className='time' format="hh:mm a"  interval={1000} />
               </NavHora>
 
           </NavOptions>
