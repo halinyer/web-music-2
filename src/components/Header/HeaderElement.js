@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image from '../../img/fondo.webp'
+import image from '../../img/wallpaperbetter.jpg'
 
 export const HeaderMain = styled.header`
 width: 100%;
