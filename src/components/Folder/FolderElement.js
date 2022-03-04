@@ -14,6 +14,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 z-index: 10;
+margin-top: 20px;
 
 `
 

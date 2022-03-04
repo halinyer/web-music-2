@@ -54,7 +54,7 @@ const Window = ({data}) => {
     // This will orchestrate the two animations above, comment the last arg and it creates a sequence
     useChain(open ? [springApi, transApi] : [transApi, springApi], [
       0,
-      open ? 0.1 : 0.6,
+      open ? 0.4 : 0.6,
     ])
 
 

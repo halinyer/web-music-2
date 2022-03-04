@@ -1,11 +1,12 @@
 
 import React from 'react'
 import { HeaderContent, HeaderMain, HeaderVideo, Videos } from './HeaderElement'
-import Back from '../../videos/header.mp4'
+import Navbar from '../Navbar'
   
 const Header = ({children}) => {
   return (
     <HeaderMain>
+         <Navbar/>
         <HeaderVideo>
            {/* <video muted autoPlay loop>
                <source src={Back}/>

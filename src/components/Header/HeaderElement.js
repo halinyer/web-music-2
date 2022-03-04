@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import image from '../../img/fondo.webp'
 
 export const HeaderMain = styled.header`
 width: 100%;
@@ -8,6 +8,12 @@ display: flex;
 justify-content: center;
 align-content: center;
 position: relative;
+background-image: url(${image});
+background-position: center;
+background-repeat: none;
+background-size: cover;
+
+
 `
 
 
@@ -41,3 +47,4 @@ right: 0;
 position: absolute;
 
 `
+
