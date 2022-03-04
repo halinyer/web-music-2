@@ -7,9 +7,9 @@ const Header = ({children}) => {
   return (
     <HeaderMain>
          <Navbar/>
-        <HeaderVideo>
+        {/* <HeaderVideo>
            
-        </HeaderVideo>
+        </HeaderVideo> */}
         <HeaderContent>
             {children}
         </HeaderContent>

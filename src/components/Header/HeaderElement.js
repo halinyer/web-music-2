@@ -29,10 +29,6 @@ justify-content: center;
 align-items: center;
 
 
-video{
-    width: 100%;
-    height: auto;
-}
 
 
 
