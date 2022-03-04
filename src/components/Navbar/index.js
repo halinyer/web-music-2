@@ -24,25 +24,25 @@ const Navbar = () => {
           <NavOptions>
               <NavSocialMedia>
                   <NavSocialItem>
-                      <a href='#'>
+                      <a href='https://iconos8.es/license'>
                           <IoLogoInstagram />
                       </a>
                   </NavSocialItem>
 
                   <NavSocialItem>
-                      <a href='#'>
+                      <a href='https://iconos8.es/license'>
                           <AiOutlineTwitter />
                       </a>
                   </NavSocialItem>
 
                   <NavSocialItem>
-                      <a href='#'>
+                      <a href='https://iconos8.es/license'>
                           <AiFillYoutube />
                       </a>
                   </NavSocialItem>
 
                   <NavSocialItem>
-                      <a href='#'>
+                      <a href='https://iconos8.es/license'>
                           <IoLogoVimeo />
                       </a>
                   </NavSocialItem>

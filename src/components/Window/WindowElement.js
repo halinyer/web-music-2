@@ -4,7 +4,6 @@ export const WindowBtn = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 25px;
-  padding-top: 15px;
   background: white;
   border-radius: 0px;
   cursor: pointer;

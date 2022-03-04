@@ -8,7 +8,7 @@ import {
   useSpringRef,
 } from 'react-spring'
 
-import { VideioWindow, WindowBtn,  WindowMain } from './WindowElement';
+import {  WindowBtn,  WindowMain } from './WindowElement';
 
 const Window = ({data}) => {
 
@@ -32,7 +32,6 @@ const Window = ({data}) => {
         background: open ? 'white' : 'transparent',
         position: open ? "absolute" : "initial",
         padding: open ? "0px": "25px",
-        paddingTop: "20px",
         top: open ? 1 : 0,
         left: open ? 1 : 0,
         right: open ? 1: 0,
